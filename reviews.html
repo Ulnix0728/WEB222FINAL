@@ -1,0 +1,59 @@
+<!-- /**
+ * WEB222 – Assignment 05
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name:       <LU XIN>
+ *      Student ID: <129528220>
+ *      Date:       <Apr 10, 2023>
+
+ // All of our data is available on the global `window` object.
+ // Create local variables to work with it in this file.
+ // const { artists, songs } = window;
+ // Wait for the DOM to be fully loaded before running any code
+ */ --> 
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="GomokuAbout">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gomoku-about</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav name="navigationBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="about.html">About</a></li>
+        </nav>
+        <h1>Reviews</h1>
+    </header>
+    <div id="reviews-container">
+        
+    </div>
+    <section>
+        <div class="addReview">
+            <h2>Add Your Review</h2>
+            <form id="review-form">
+                <input type="name" id="name" name="name" placeholder="Enter your name" required>
+                <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+                <label for="text">Review:</label>
+                <textarea id="text" name="text" rows="4" cols="50" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

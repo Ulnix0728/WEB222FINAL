@@ -1,0 +1,80 @@
+<!-- /**
+    * WEB222 – Assignment 05
+    *
+    * I declare that this assignment is my own work in accordance with
+    * Seneca Academic Policy. No part of this assignment has been
+    * copied manually or electronically from any other source
+    * (including web sites) or distributed to other students.
+    *
+    * Please update the following with your information:
+    *
+    *      Name:       <LU XIN>
+    *      Student ID: <129528220>
+    *      Date:       <Apr 10, 2023>
+   
+    // All of our data is available on the global `window` object.
+    // Create local variables to work with it in this file.
+    // const { artists, songs } = window;
+    // Wait for the DOM to be fully loaded before running any code
+    */ --> 
+   
+    <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="GomokuAbout">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gomoku-about</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <header>
+        <nav name="navigationBar" >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </nav>
+        <h1>Information</h1>
+    </header>
+<main>
+    <section id="history">
+        <h2>History of Gomoku</h2>
+        <p>Gomoku has existed in Japan since before the Meiji Restoration (1868). The name "gomoku" is from the Japanese language, in which it is referred to as gomokunarabe (五目並べ). Go means five, moku is a counter word for pieces and narabe means line-up. The game is popular in China, where it is called Wuziqi (五子棋).</p>
+    </section>
+    <section id="rules">
+        <h2>Rules of Gomoku</h2>
+        <p>Players alternate turns placing a stone of their color on an empty intersection. Black plays first. The winner is the first player to form an unbroken line of five stones of their color horizontally, vertically, or diagonally. In some rules, this line must be exactly five stones long; six or more stones in a row does not count as a win, and is called an overline. If the board is completely filled and no one can make a line of 5 stones, then it will result in a draw.</p>
+    </section>
+    <section id="tips">
+        <h2>Tips and Strategies</h2>
+        <p>
+            Gomoku has a strong advantage for the first player when unrestricted.  
+        </p>
+        <p>in gomoku previously used the "Pro" opening rule, which mandated that the first player place the first stone in the center of the board. The second player's stone placement was unrestricted. The first player's second stone had to be placed at least three intersections away from the first player's first stone. This rule was used in the 1989 and 1991 world championships.When the win–loss ratio of these two championships was calculated, the first player (black) won 67 percent of games.</p> 
+
+        <p>This was deemed too unbalanced for tournament play, so tournament gomoku adopted the Swap2 opening protocol in 2009. In Swap2, the first player places three stones, two black and one white, on the board. The second player then selects one of three options: play as black, play as white and place another white stone, or place two more stones, one white and one black, and let the first player choose the color.</p>
+
+        <p>The win ratio of the first player has been calculated to be around 52 percent using the Swap2 opening protocol, greatly balancing the game and largely solving the first-player advantage.</p>
+            
+            
+    </section>
+</main>
+
+<footer>
+    <div>
+        <p>Explore our website to learn more about the game's history, rules, and winning strategies. Don't forget to check out the reviews from fellow Gomoku enthusiasts!</p>
+        <h3>Enter your email to join</h3>
+        <form id="newsletter-form" action="https://httpbin.org/post" method="post">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="hidden" name="creator" value="LuXin">
+            <button type="submit" id="join-btn">Join</button>
+        </form>
+    </div>
+    
+</footer>
+       <script src="scripts.js"></script>
+   </body>
+   </html>
+   

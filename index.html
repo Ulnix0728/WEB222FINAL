@@ -1,0 +1,70 @@
+<!-- /**
+ * WEB222 – Assignment 05
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name:       <LU XIN>
+ *      Student ID: <129528220>
+ *      Date:       <Apr 10, 2023>
+
+ // All of our data is available on the global `window` object.
+ // Create local variables to work with it in this file.
+ // const { artists, songs } = window;
+ // Wait for the DOM to be fully loaded before running any code
+ */ --> 
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="GomokuAbout">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gomoku-about</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav name="navigationBar" >
+            <li><a href="info.html">Game Info</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </nav>
+        <h1>Gomoku</h1>
+    </header>
+
+    <main>
+       
+        <p>Gomoku(5 in a row) is a strategic board game where two players take turns placing black and white stones on a grid. The objective is to form a row of five stones horizontally, vertically, or diagonally.</p>
+        <br>
+        <h2>Check out the video on how to play Gomoku</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-KD743yNDHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        
+        
+
+    </main>
+    <footer>
+        <div>
+            <p>Explore our website to learn more about the game's history, rules, and winning strategies. Don't forget to check out the reviews from fellow Gomoku enthusiasts!</p>
+            <h3>Enter your email to join</h3>
+            <form id="newsletter-form" action="https://httpbin.org/post" method="post">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="hidden" name="creator" value="LuXin">
+                <button type="submit" id="join-btn">Join</button>
+            </form>
+        </div>
+        
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
